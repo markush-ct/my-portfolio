@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-svg[data-slot="icon"] {
-    width: 26px;
-    height: 26px;
+svg[data-slot="icon"],
+#icon {
+    width: 28px;
+    height: 28px;
 }
