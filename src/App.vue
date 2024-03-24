@@ -11,10 +11,11 @@
 </template>
 
 <script setup>
-import Navbar from "./components/Navbar.vue";
-import Hero from "./components/Hero.vue";
+// Partials
+import Navbar from "./components/partials/Navbar.vue";
+import Hero from "./components/partials/Hero.vue";
 
 // Sections
-import About from "./components/sections/About.vue";
-import Skills from "./components/sections/Skills.vue";
+import About from "./components/partials/sections/About.vue";
+import Skills from "./components/partials/sections/Skills.vue";
 </script>

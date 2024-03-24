@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-import SkillsIndicator from "../SkillsIndicator.vue";
+import SkillsIndicator from "../../SkillsIndicator.vue";
 
 const skills = {
   frontend: [

@@ -15,20 +15,15 @@
       </p>
 
       <div class="flex justify-center gap-3 lg:justify-start">
-        <a
-          href="#"
-          class="inline-flex items-center gap-2 bg-primary px-3 py-2 transition duration-150 ease-in-out hover:bg-opacity-80"
-        >
+        <PrimaryButton>
           <PhFile id="icon" weight="fill" />
           <span class="font-medium">My Resume</span>
-        </a>
-        <a
-          href="#"
-          class="inline-flex items-center gap-2 border-2 border-primary px-3 py-2 text-primary transition duration-150 ease-in-out hover:bg-primary hover:bg-opacity-10"
-        >
+        </PrimaryButton>
+
+        <PrimaryButton :opaque="true">
           <PhPhoneCall id="icon" weight="fill" />
           <span class="font-medium">Hire Me</span>
-        </a>
+        </PrimaryButton>
       </div>
     </div>
 
@@ -74,7 +69,7 @@
       <div class="space-y-6 py-6">
         <h2 class="text-2xl font-bold uppercase">Follow Me</h2>
 
-        <div class="inline-flex gap-3">
+        <div class="inline-flex flex-wrap gap-3">
           <a
             href="#"
             class="transition duration-150 ease-in-out hover:text-primary"
@@ -124,6 +119,10 @@
 </template>
 
 <script setup>
+// components
+import PrimaryButton from "../PrimaryButton.vue";
+
+// icons
 import { ArrowRightIcon } from "@heroicons/vue/24/solid";
 import {
   PhFacebookLogo,
