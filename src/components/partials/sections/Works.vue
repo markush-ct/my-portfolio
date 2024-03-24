@@ -1,25 +1,30 @@
 <template>
-  <section id="works" class="min-h-screen bg-secondary px-3 py-24 md:px-12">
-    <div class="space-y-6">
-      <span class="border-l-4 border-primary px-6 text-xl font-bold">
-        About Me
-      </span>
+  <section
+    id="works"
+    class="flex min-h-screen items-center justify-center bg-secondary"
+  >
+    <div class="w-full max-w-[1920px] px-3 py-24 md:px-12">
+      <div class="space-y-6">
+        <span class="border-l-4 border-primary px-6 text-xl font-bold">
+          About Me
+        </span>
 
-      <h1 class="text-4xl font-bold">My best projects I made so far</h1>
+        <h1 class="text-4xl font-bold">My best projects I made so far</h1>
 
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
-        <template v-for="{ title, description, link, techStack } in projects">
-          <ProjectCard
-            class="col-span-6 lg:col-span-4"
-            :title="title"
-            :description="description"
-            :link="link"
-          >
-            <template v-for="{ name, type, classIcon } in techStack">
-              <TechLabel :name="name" :type="type" :classIcon="classIcon" />
-            </template>
-          </ProjectCard>
-        </template>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
+          <template v-for="{ title, description, link, techStack } in projects">
+            <ProjectCard
+              class="col-span-6 lg:col-span-4"
+              :title="title"
+              :description="description"
+              :link="link"
+            >
+              <template v-for="{ name, type, classIcon } in techStack">
+                <TechLabel :name="name" :type="type" :classIcon="classIcon" />
+              </template>
+            </ProjectCard>
+          </template>
+        </div>
       </div>
     </div>
   </section>
