@@ -1,5 +1,6 @@
 <template>
   <header
+    id="home"
     class="grid min-h-[calc(100vh-60px)] grid-cols-1 px-3 text-center md:gap-6 md:px-12 lg:grid-cols-2 lg:text-left"
   >
     <div class="flex flex-col justify-center gap-6 py-6">
