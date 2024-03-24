@@ -1,13 +1,10 @@
 <template>
   <header
-    class="grid min-h-[calc(100vh-60px)] grid-cols-1 px-6 text-center md:gap-6 md:px-12 lg:grid-cols-2 lg:text-left"
+    class="grid min-h-[calc(100vh-60px)] grid-cols-1 px-3 text-center md:gap-6 md:px-12 lg:grid-cols-2 lg:text-left"
   >
     <div class="flex flex-col justify-center gap-6 py-6">
-      <h1 class="text-6xl font-bold">
-        I'm <span class="text-primary">Marc Jenald</span>, a
-        <br />
-        Programmer and
-        <br />
+      <h1 class="text-4xl font-bold md:text-6xl">
+        I'm <span class="text-primary">Marc Jenald</span>, a Programmer and
         Graphic Designer
       </h1>
 
@@ -20,14 +17,14 @@
       <div class="flex justify-center gap-3 lg:justify-start">
         <a
           href="#"
-          class="bg-primary inline-flex items-center gap-2 px-3 py-2 transition duration-150 ease-in-out hover:bg-opacity-80"
+          class="inline-flex items-center gap-2 bg-primary px-3 py-2 transition duration-150 ease-in-out hover:bg-opacity-80"
         >
           <PhFile id="icon" weight="fill" />
           <span class="font-medium">My Resume</span>
         </a>
         <a
           href="#"
-          class="border-primary text-primary hover:bg-primary inline-flex items-center gap-2 border-2 px-3 py-2 transition duration-150 ease-in-out hover:bg-opacity-10"
+          class="inline-flex items-center gap-2 border-2 border-primary px-3 py-2 text-primary transition duration-150 ease-in-out hover:bg-primary hover:bg-opacity-10"
         >
           <PhPhoneCall id="icon" weight="fill" />
           <span class="font-medium">Hire Me</span>
@@ -35,7 +32,7 @@
       </div>
     </div>
 
-    <div class="divide-secondary flex flex-col justify-center divide-y-2">
+    <div class="flex flex-col justify-center divide-y-2 divide-secondary">
       <div class="space-y-6 py-6">
         <h2 class="text-2xl font-bold uppercase">About Me</h2>
 
@@ -48,7 +45,7 @@
 
         <a
           href="#"
-          class="hover:text-primary hover:border-primary inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out"
+          class="inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out hover:border-primary hover:text-primary"
         >
           Learn More
           <ArrowRightIcon />
@@ -67,7 +64,7 @@
 
         <a
           href="#"
-          class="hover:text-primary hover:border-primary inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out"
+          class="inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out hover:border-primary hover:text-primary"
         >
           Learn More
           <ArrowRightIcon />
@@ -80,43 +77,43 @@
         <div class="inline-flex gap-3">
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhFacebookLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhGithubLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhInstagramLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhLinkedinLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhYoutubeLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhTwitterLogo id="icon" weight="fill" />
           </a>
           <a
             href="#"
-            class="hover:text-primary transition duration-150 ease-in-out"
+            class="transition duration-150 ease-in-out hover:text-primary"
           >
             <PhBehanceLogo id="icon" weight="fill" />
           </a>
