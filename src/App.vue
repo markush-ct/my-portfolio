@@ -6,6 +6,7 @@
     <main>
       <About />
       <Skills />
+      <Works />
     </main>
   </div>
 </template>
@@ -18,4 +19,5 @@ import Hero from "./components/partials/Hero.vue";
 // Sections
 import About from "./components/partials/sections/About.vue";
 import Skills from "./components/partials/sections/Skills.vue";
+import Works from "./components/partials/sections/Works.vue";
 </script>
