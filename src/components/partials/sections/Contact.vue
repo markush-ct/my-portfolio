@@ -13,7 +13,14 @@
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
           <div class="col-span-6">
-            <form class="space-y-6" name="contact" netlify>
+            <form
+              class="space-y-6"
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <div class="space-y-3">
                 <label for="name">Name</label>
                 <input
