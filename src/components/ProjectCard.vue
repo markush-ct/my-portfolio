@@ -1,13 +1,10 @@
 <template>
-  <div class="inline-block overflow-hidden rounded-md bg-base shadow-md">
-    <div class="relative">
-      <div class="absolute h-full w-full bg-base bg-opacity-60"></div>
-      <img
-        src="https://picsum.photos/1200"
-        alt="Card Image"
-        class="aspect-video max-h-[400px] w-full object-cover object-center"
-      />
-    </div>
+  <div class="inline-block overflow-hidden rounded-md bg-base shadow-lg">
+    <img
+      :src="image"
+      alt="Card Image"
+      class="aspect-video max-h-[400px] w-full object-cover object-center"
+    />
 
     <div class="divide-y-2 divide-secondary px-3">
       <div class="space-y-3 py-3">
@@ -37,5 +34,6 @@ defineProps({
   title: String,
   description: String,
   link: String,
+  image: String,
 });
 </script>

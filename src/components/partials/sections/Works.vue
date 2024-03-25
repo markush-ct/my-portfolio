@@ -6,18 +6,21 @@
     <div class="w-full max-w-[1920px] px-3 py-24 md:px-12">
       <div class="space-y-6">
         <span class="border-l-4 border-primary px-6 text-xl font-bold">
-          About Me
+          Works
         </span>
 
         <h1 class="text-4xl font-bold">My best projects I made so far</h1>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
-          <template v-for="{ title, description, link, techStack } in projects">
+          <template
+            v-for="{ title, description, link, image, techStack } in projects"
+          >
             <ProjectCard
               class="col-span-6 lg:col-span-4"
               :title="title"
               :description="description"
               :link="link"
+              :image="image"
             >
               <template v-for="{ name, type, classIcon } in techStack">
                 <TechLabel :name="name" :type="type" :classIcon="classIcon" />
@@ -31,6 +34,12 @@
 </template>
 
 <script setup>
+// images
+import ImgSubliTool from "../../../assets/subli-tool.png";
+import ImgSocMedApp from "../../../assets/social-media-app.png";
+import ImgPhaser from "../../../assets/phaser.png";
+import ImgMyPortfolio from "../../../assets/my-portfolio.png";
+
 // components
 import ProjectCard from "../../ProjectCard.vue";
 import TechLabel from "../../TechLabel.vue";
@@ -41,6 +50,7 @@ const projects = [
     description:
       "A lightweight python script that automate sizing in sublimation.",
     link: "https://github.com/markush-ct/subli-tool",
+    image: ImgSubliTool,
     techStack: [
       {
         name: "Python",
@@ -54,6 +64,7 @@ const projects = [
     description:
       "A simple and advanced social media app using Laravel and Vue.js",
     link: "https://github.com/markush-ct/social-media-app",
+    image: ImgSocMedApp,
     techStack: [
       {
         name: "Php",
@@ -76,6 +87,7 @@ const projects = [
     title: "phaser-project-template",
     description: "A Phaser Project Template with Webpack 5",
     link: "https://github.com/markush-ct/phaser-project-template",
+    image: ImgPhaser,
     techStack: [
       {
         name: "JavaScript",
@@ -94,6 +106,7 @@ const projects = [
     description:
       "My simple and intuitive portfolio built with vue.js and tailwindcss",
     link: "https://github.com/markush-ct/my-portfolio",
+    image: ImgMyPortfolio,
     techStack: [
       {
         name: "HTML5",
