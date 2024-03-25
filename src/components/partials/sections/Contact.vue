@@ -16,11 +16,14 @@
             <form
               class="space-y-6"
               name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              action="https://api.web3forms.com/submit"
+              method="POST"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="hidden"
+                name="access_key"
+                value="e64fe5a8-7ad9-4838-a849-b6c34db005cf"
+              />
               <div class="space-y-3">
                 <label for="name">Name</label>
                 <input
