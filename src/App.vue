@@ -9,6 +9,8 @@
       <Works />
       <Contact />
     </main>
+
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +18,7 @@
 // Partials
 import Navbar from "./components/partials/Navbar.vue";
 import Hero from "./components/partials/Hero.vue";
+import Footer from "./components/partials/Footer.vue";
 
 // Sections
 import About from "./components/partials/sections/About.vue";
