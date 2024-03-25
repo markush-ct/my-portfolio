@@ -30,7 +30,11 @@
       </div>
 
       <div class="space-y-6 md:col-span-6">
-        <div class="flex gap-6">
+        <div class="flex justify-center md:justify-start">
+          <MyProfile :image="ImgMyProfile" />
+        </div>
+
+        <div class="flex justify-center gap-6 md:justify-start">
           <div class="inline-flex items-end gap-3">
             <span class="text-6xl font-bold text-primary">3</span>
             <div>
@@ -80,6 +84,9 @@
 
 <script setup>
 import TechCard from "../../TechCard.vue";
+import MyProfile from "../../MyProfile.vue";
+
+import ImgMyProfile from "../../../assets/my-profile.png";
 
 const favoriteTools = [
   {
