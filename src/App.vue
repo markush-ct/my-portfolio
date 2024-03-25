@@ -7,6 +7,7 @@
       <About />
       <Skills />
       <Works />
+      <Contact />
     </main>
   </div>
 </template>
@@ -20,4 +21,5 @@ import Hero from "./components/partials/Hero.vue";
 import About from "./components/partials/sections/About.vue";
 import Skills from "./components/partials/sections/Skills.vue";
 import Works from "./components/partials/sections/Works.vue";
+import Contact from "./components/partials/sections/Contact.vue";
 </script>
