@@ -22,9 +22,10 @@
     <div class="block md:hidden">
       <button
         @click="isResponsive = !isResponsive"
-        class="rounded-xl bg-secondary p-3 shadow-md transition duration-150 ease-in-out hover:bg-primary"
+        class="rounded-md bg-secondary p-2 shadow-md transition duration-150 ease-in-out hover:bg-primary"
       >
-        <Bars3Icon />
+        <Bars3Icon v-if="!isResponsive" />
+        <XMarkIcon v-else />
       </button>
 
       <div
@@ -47,7 +48,7 @@
 </template>
 
 <script setup>
-import { Bars3Icon } from "@heroicons/vue/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/solid";
 
 import { ref } from "vue";
 
