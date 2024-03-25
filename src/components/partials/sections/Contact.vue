@@ -13,29 +13,38 @@
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
           <div class="col-span-6">
-            <form class="space-y-6">
-              <input
-                name="name"
-                class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
-                type="text"
-                placeholder="Name"
-                required
-              />
-              <input
-                name="email"
-                class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
-                type="email"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                name="message"
-                class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                required
-              ></textarea>
+            <form class="space-y-6" name="contact" netlify>
+              <div class="space-y-3">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
+                  type="text"
+                  required
+                />
+              </div>
+              <div class="space-y-3">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
+                  type="email"
+                  required
+                />
+              </div>
+              <div class="space-y-3">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full rounded-md bg-secondary p-3 outline-none outline-offset-4 focus:outline-primary"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
 
               <button
                 type="submit"
