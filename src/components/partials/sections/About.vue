@@ -18,10 +18,14 @@
         </h1>
 
         <p class="text-justify text-gray-400">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In non
-          aliquam at quia exercitationem tempore reiciendis odit error quasi
-          earum eveniet nam, ipsa delectus dolorem voluptatem molestias,
-          officiis impedit numquam!
+          Since 2021 I started to learn programming and start with the little
+          web project using HTML, CSS, and just my small phone. I don't have any
+          equipment at that time but it didn't stop me there from learning
+          programming that I always love to do. And the most part in the
+          programming that I love is the web development. It always gives me the
+          interest on how the internet works and technologies used in some of
+          the giant company in the tech industry such as facebook, tiktok, and
+          so on.
         </p>
       </div>
 
@@ -47,9 +51,9 @@
         </div>
 
         <p class="text-justify text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi
-          deserunt sint corrupti quam consequuntur. Rerum labore consectetur qui
-          nemo, id hic? Enim nobis accusantium adipisci ex sit qui distinctio!
+          I've created so many projects so far including the ones related to
+          graphic design. But I listed only those I think are the best in the
+          <a href="#works" class="text-primary">works section</a>.
         </p>
       </div>
 
@@ -62,7 +66,7 @@
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
           <template v-for="favoriteTool in favoriteTools">
-            <TechCards
+            <TechCard
               :name="favoriteTool.name"
               :classIcon="favoriteTool.class"
               :image="favoriteTool.image"
@@ -75,7 +79,7 @@
 </template>
 
 <script setup>
-import TechCards from "../../TechCards.vue";
+import TechCard from "../../TechCard.vue";
 
 const favoriteTools = [
   {
@@ -186,3 +190,4 @@ const favoriteTools = [
   },
 ];
 </script>
+../../TechCard.vue

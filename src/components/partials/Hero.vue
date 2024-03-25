@@ -36,14 +36,16 @@
           <h2 class="text-2xl font-bold uppercase">About Me</h2>
 
           <p class="text-justify text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            culpa deserunt itaque vitae quo illum, iusto architecto quam
-            temporibus nesciunt, doloribus debitis eligendi eveniet reiciendis
-            alias repellendus? Natus, corrupti vitae!
+            I've been in the printing industry for almost 3 years now. I enjoy
+            creating designs and ideas specially in sublimation. I make creative
+            sportswear designs that the customer can be proud of to wear. I am
+            also an indie developer that love codes all the time. I proudly say
+            that I haven't graduated of any college degree related to this but I
+            have the skills. My recent works can be the proof of my expertise.
           </p>
 
           <a
-            href="#"
+            href="#about"
             class="inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out hover:border-primary hover:text-primary"
           >
             Learn More
@@ -55,14 +57,14 @@
           <h2 class="text-2xl font-bold uppercase">My Works</h2>
 
           <p class="text-justify text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            culpa deserunt itaque vitae quo illum, iusto architecto quam
-            temporibus nesciunt, doloribus debitis eligendi eveniet reiciendis
-            alias repellendus? Natus, corrupti vitae!
+            My recent projects are mostly dedicated to help in the community.
+            Some of which is just a pet project to show off my skills in
+            programming. And specially some of the projects are related to
+            sublimation.
           </p>
 
           <a
-            href="#"
+            href="#works"
             class="inline-flex gap-3 border-b-4 pb-1 uppercase transition duration-150 ease-in-out hover:border-primary hover:text-primary"
           >
             Learn More
