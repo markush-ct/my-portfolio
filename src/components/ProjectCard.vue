@@ -10,7 +10,7 @@
       <div class="space-y-3 py-3">
         <div class="flex items-center justify-between">
           <div class="text-xl font-medium">{{ title }}</div>
-          <a :href="link" target="_blank">
+          <a v-if="link" :href="link" target="_blank">
             <i
               class="devicon-github-original text-xl transition duration-150 ease-in-out hover:text-primary"
             >
