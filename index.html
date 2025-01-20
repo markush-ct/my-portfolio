@@ -16,6 +16,25 @@
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (e) => {
+      const form = document.getElementById('contact-form');
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+
+          const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+          if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+          }
+        });
+      }
+    })
+  </script>
 </body>
 
 </html>

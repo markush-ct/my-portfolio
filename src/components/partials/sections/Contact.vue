@@ -15,6 +15,7 @@
           <div class="col-span-6">
             <form
               class="space-y-6"
+              id="contact-form"
               name="contact"
               action="https://api.web3forms.com/submit"
               method="POST"
@@ -55,6 +56,9 @@
                   required
                 ></textarea>
               </div>
+
+              <!-- h-captcha -->
+              <div class="h-captcha" data-captcha="true"></div>
 
               <button
                 type="submit"
