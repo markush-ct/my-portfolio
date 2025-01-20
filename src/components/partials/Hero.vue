@@ -19,12 +19,12 @@
         </p>
 
         <div class="flex justify-center gap-3 lg:justify-start">
-          <PrimaryButton>
+          <PrimaryButton href="https://drive.google.com/file/d/10mPaPFfydIlQXipv8FH3waOkifivVSrV/view?usp=sharing" target="_blank">
             <PhFile id="icon" weight="fill" />
             <span class="font-medium">My Resume</span>
           </PrimaryButton>
 
-          <PrimaryButton :opaque="true">
+          <PrimaryButton :opaque="true" href="tel:+639614263452">
             <PhPhoneCall id="icon" weight="fill" />
             <span class="font-medium">Hire Me</span>
           </PrimaryButton>
@@ -83,7 +83,8 @@
               <PhFacebookLogo id="icon" weight="fill" />
             </a>
             <a
-              href="#"
+              href="https://github.com/markush-ct"
+              target="_blank"
               class="transition duration-150 ease-in-out hover:text-primary"
             >
               <PhGithubLogo id="icon" weight="fill" />
@@ -113,7 +114,8 @@
               <PhTwitterLogo id="icon" weight="fill" />
             </a>
             <a
-              href="#"
+              href="http://be.net/markushgraphics"
+              target="_blank"
               class="transition duration-150 ease-in-out hover:text-primary"
             >
               <PhBehanceLogo id="icon" weight="fill" />

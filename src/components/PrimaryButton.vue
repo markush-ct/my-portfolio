@@ -1,5 +1,5 @@
 <template>
-  <a href="#" :class="isOpaque" class="round">
+  <a :href="href" :class="isOpaque" class="round" :target="target">
     <slot />
   </a>
 </template>
@@ -11,6 +11,14 @@ const props = defineProps({
   opaque: {
     default: false,
     type: Boolean,
+  },
+  href: {
+    default: '#',
+    type: String,
+  },
+  target: {
+    default: undefined,
+    type: String,
   },
 });
 
